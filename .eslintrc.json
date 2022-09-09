@@ -35,6 +35,7 @@
   "rules": {
     "camelcase": "off",
     "import/no-duplicates": "off",
+    "react/jsx-no-bind": "off",
     "react/jsx-props-no-spreading": "off",
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
@@ -42,17 +43,9 @@
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
-        "components": [
-          "Link"
-        ],
-        "specialLink": [
-          "hrefLeft",
-          "hrefRight"
-        ],
-        "aspects": [
-          "invalidHref",
-          "preferButton"
-        ]
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
       }
     ],
     "react/jsx-one-expression-per-line": "off",
@@ -62,9 +55,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".tsx"
-        ]
+        "extensions": [".tsx"]
       }
     ],
     "import/prefer-default-export": "off",
